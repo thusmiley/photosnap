@@ -3,10 +3,10 @@ import arrowWhite from "../assets/shared/desktop/arrow-white.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-[56px] md:py-[64px]">
-      <div className="md:flex md:justify-between md:container md:mx-auto md:items-stretch xl:relative">
+    <footer className="bg-black text-white py-[56px] md:py-[64px] md:px-10 xl:px-[165px]">
+      <div className="md:flex md:justify-between md:mx-auto md:items-stretch xl:relative">
         {/* div contains logo, social icons, menu  */}
-        <div className="xl:h-[122px]">
+        <div>
           <div className="mx-auto md:ml-0">
             <img src={logoWhite} alt="logo" className="h-4 w-full object-contain mb-8 md:mb-0 md:object-left" />
 
@@ -81,11 +81,11 @@ const Footer = () => {
                 </svg>
               </div>
 
-              <ul className="mt-[49px] mb-[119px] text-center space-y-[19px] text-[12px] tracking-[2px] md:flex md:justify-start md:items-center md:space-y-0 md:space-x-[26px] md:mt-8 md:mb-[72px] xl:absolute xl:flex-col xl:top-0 xl:left-[400px] xl:space-x-0 xl:items-start xl:mt-0 xl:mb-0 xl:space-y-[19px]">
-                <li>HOME</li>
-                <li>STORIES</li>
-                <li>FEATURES</li>
-                <li>PRICING</li>
+              <ul className="mt-[49px] mb-[119px] text-center space-y-[19px] text-[12px] tracking-[2px] md:flex md:justify-start md:items-center md:space-y-0 md:space-x-[26px] md:mt-8 md:mb-[72px] xl:absolute xl:flex-col xl:top-0 xl:left-[30%] xl:space-x-0 xl:items-start xl:mt-0 xl:mb-0 xl:space-y-[19px] 2xl:left-[25%]">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/stories">STORIES</a></li>
+                <li><a href="/features">FEATURES</a></li>
+                <li><a href="/pricing">PRICING</a></li>
               </ul>
             </div>
           </div>

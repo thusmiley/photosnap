@@ -28,8 +28,8 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`${show ? 'top-0 opacity-100' : "top-[-72px] opacity-0"} transition-all duration-300 ease-in-out fixed z-10 bg-white w-full py-[28px] md:py-[16px] `}>
-      <div className="mx-auto container flex justify-between items-center">
+    <header className={`${show ? "top-0 opacity-100" : "top-[-72px] opacity-0"} transition-all duration-300 ease-in-out fixed z-10 bg-white w-full py-[28px] md:py-[16px] `}>
+      <div className="mx-auto px-[29px] flex justify-between items-center md:px-10 xl:px-[165px]">
         <a href="/">
           <img src={logo} alt="logo" className="object-contain object-left w-full h-4" />
         </a>
@@ -37,10 +37,10 @@ const NavBar = () => {
           <ul
             className={`${
               !toggle ? "hidden" : "flex"
-            } z-10 absolute bg-white top-[72px] left-0 right-0 font-bold text-[15px] tracking-[2.5px] flex-col py-8 space-y-5 justify-center items-center text-center container md:w-full md:flex md:relative md:flex-row md:space-y-0 md:top-0 md:p-0 md:mb-0 md:space-x-[37px] md:text-[12px] md:tracking-[2px]`}
+            } z-10 absolute bg-white top-[72px] left-0 right-0 font-bold text-[15px] tracking-[2.5px] flex-col py-8 space-y-5 justify-center items-center text-center px-[29px] md:w-full md:flex md:relative md:flex-row md:space-y-0 md:top-0 md:p-0 md:mb-0 md:space-x-[37px] md:text-[12px] md:tracking-[2px]`}
           >
             <li className="fadein">
-              <a href="/portfolio">STORIES</a>
+              <a href="/stories">STORIES</a>
             </li>
             <li className="fadein">
               <a href="/features">FEATURES</a>

@@ -25,8 +25,8 @@ const Home = () => {
             <source media="(min-width: 1201px)" srcSet={heroDesktop} />
             <img src={heroMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
           </picture>
-          <div className="mt-[72px] px-[1rem] relative md:w-[60%] md:px-[54px] md:my-[173px] xl:w-[40%] xl:px-[110px]">
-            <div className="deco-line md:w-[6px] md:h-full md:left-0" />
+          <div className="mt-[72px] px-[29px] relative md:w-[60%] md:px-[54px] md:my-[173px] xl:w-[40%] xl:px-[110px]">
+            <div className="deco-line md:w-[6px] md:top-0 md:h-full md:left-0" />
             <h1 className="heading1">Create and share your photo stories.</h1>
             <p className="paragraph text-white/60 mt-4 mb-[23px] md:mt-[21px] md:mb-12">
               Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
@@ -47,7 +47,7 @@ const Home = () => {
             <source media="(min-width: 1201px)" srcSet={storiesDesktop} />
             <img src={storiesMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
           </picture>
-          <div className="py-[72px] px-[1rem] relative md:w-[60%] md:px-[54px] xl:w-[40%] xl:px-[110px]">
+          <div className="py-[72px] px-[29px] relative md:w-[60%] md:px-[54px] xl:w-[40%] xl:px-[110px]">
             <h2 className="heading1">BEAUTIFUL STORIES EVERY TIME</h2>
             <p className="paragraph text-black/60 mt-4 mb-[23px] md:mt-[21px] md:mb-12">
               We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with
@@ -69,7 +69,7 @@ const Home = () => {
             <source media="(min-width: 1201px)" srcSet={designedDesktop} />
             <img src={designedMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
           </picture>
-          <div className="py-[72px] px-[1rem] relative md:w-[60%] md:px-[54px] xl:w-[40%] xl:px-[110px]">
+          <div className="py-[72px] px-[29px] relative md:w-[60%] md:px-[54px] xl:w-[40%] xl:px-[110px]">
             <h2 className="heading1">DESIGNED FOR EVERYONE</h2>
             <p className="paragraph text-black/60 mt-4 mb-[23px] md:mt-[21px] md:mb-12">
               Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.
@@ -92,7 +92,7 @@ const Home = () => {
 
       {/* features */}
       <section>
-        <div className="container mx-auto py-20 space-y-[56px] md:py-[120px] md:space-y-20 xl:flex xl:justify-around xl:items-start xl:space-y-0 xl:space-x-[30px]">
+        <div className="px-[29px] mx-auto py-20 space-y-[56px] md:py-[120px] md:space-y-20 xl:flex xl:justify-around xl:items-start xl:space-y-0 xl:space-x-[30px] xl:px-[165px]">
           {homeFeaturesData.map((card) => (
             <FeatureCard key={card.id} {...card} />
           ))}

@@ -50,11 +50,6 @@
     font-size: 32px;
     line-height: 40px;
   }
-  .heading4 {
-    font-size: 250px;
-    line-height: 200px;
-    letter-spacing: -5px;
-  }
   .paragraph {
     font-size: 15px;
     line-height: 25px;
@@ -95,7 +90,7 @@
   }
   .deco-line {
     position: absolute;
-    top: 0;
+    top: -72px;
     background: linear-gradient(27deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
     height: 6px;
     width: 128px;
