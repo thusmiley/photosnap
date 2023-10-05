@@ -1,0 +1,170 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+// base 
+@layer base 
+    *
+        box-sizing: border-box
+        margin: 0
+        padding: 0
+    
+    body
+        font-synthesis: none
+        text-rendering: optimizeLegibility
+        scroll-behavior: smooth
+        @apply font-dmSans 
+
+    a 
+        transition: 0.3s ease-in-out
+        text-decoration: none
+        color: inherit
+        font-size: inherit
+
+    input,
+    textarea,
+    button,
+    select,
+    a 
+        -webkit-tap-highlight-color: transparent
+
+    // headings and paragraph
+    .heading1, .heading2, .heading3, .heading4, .heading5, .heading6, a
+        @apply font-bold
+
+    .heading1
+        font-size: 32px
+        line-height: 40px
+        letter-spacing: 3.33px
+        text-transform: uppercase
+        @screen md
+            font-size: 40px
+            line-height: 48px
+            letter-spacing: 4.17px
+
+    .heading2
+        font-size: 18px
+        line-height: 25px
+
+    .heading3
+        font-size: 32px
+        line-height: 40px
+
+    .heading4
+        font-size: 250px
+        line-height: 200px
+        letter-spacing: -5px
+
+    .paragraph
+        font-size: 15px
+        line-height: 25px
+
+// components
+@layer components
+    .cta
+        @apply text-[12px] tracking-[2px] transition-all duration-300 outline-none border-none
+
+    .cta:hover
+        @apply delay-200
+
+    li:hover
+        @apply opacity-30 duration-300 cursor-pointer
+
+
+// utitlities
+@layer utilities
+    .fadein 
+        animation: slide 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    @keyframes slide 
+        0% 
+            -webkit-transform: translateY(100px)
+            transform: translateY(100px)
+        100% 
+            -webkit-transform: translateY(0)
+            transform: translateY(0)
+@screen md
+    @keyframes slide 
+        0% 
+            -webkit-transform: translateX(100px)
+            transform: translateX(100px)
+        100% 
+            -webkit-transform: translateX(0)
+            transform: translateX(0)
+
+    .deco-line
+        position: absolute
+        top: 0
+        background: linear-gradient(27deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%)
+        height: 6px
+        width: 128px
+
+    .socials svg
+        cursor: pointer
+        display: inline-block
+
+    .facebook:hover stop:last-child
+        stop-color: #63AFDB
+
+    .facebook:hover stop:first-child
+        stop-color: #6028F1
+
+    .youtube:hover stop:last-child
+        stop-color: #D3205A
+
+    .youtube:hover stop:first-child
+        stop-color: #FF5A5A
+
+    .twitter:hover stop:last-child
+        stop-color: #65FFEB
+
+    .twitter:hover stop:first-child
+        stop-color: #27718A
+
+    .pinterest:hover stop:last-child
+        stop-color: #F6C683
+
+    .pinterest:hover stop:first-child
+        stop-color: #DE3838
+
+    .instagram:hover stop:nth-child(2)
+        stop-color: #BC7198
+
+    .instagram:hover stop:first-child
+        stop-color: #5A77FF
+
+    // stories backgrounds 
+    .mountains
+        background: url('/src/assets/stories/mobile/mountains.jpg') no-repeat top center
+        background-size: cover
+        @screen md
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/desktop/mountains.jpg') no-repeat top center
+            background-size: cover
+
+    .cityscapes
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/mobile/cityscapes.jpg') no-repeat top center
+        background-size: cover
+        @screen md
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/desktop/cityscapes.jpg') no-repeat top center
+            background-size: cover
+
+    .voyage
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/mobile/18-days-voyage.jpg') no-repeat top center
+        background-size: cover
+        @screen md
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/desktop/18-days-voyage.jpg') no-repeat top center
+            background-size: cover
+
+    .architecturals
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/mobile/architecturals.jpg') no-repeat top center
+        background-size: cover
+        @screen md
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.66)), url('/src/assets/stories/desktop/architecturals.jpg') no-repeat top center
+            background-size: cover
+
+    .hover-effect:hover
+        transition: transform 500ms ease-in-out
+        -webkit-transform: translateY(-24px)
+        transform: translateY(-24px)
+
+    .bg-gradient
+        background: linear-gradient(27deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%)
