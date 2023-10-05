@@ -20,7 +20,7 @@ const Home = () => {
       <section className="bg-black py-[72px] md:mt-[78px] md:py-0">
         <div className="text-white md:flex md:flex-row-reverse md:items-center md:h-[650px]">
           <picture className="md:w-[40%] xl:w-[60%]">
-            <source media="(max-width: 680px)" srcSet={heroMobile} />
+            <source media="(max-width: 768px)" srcSet={heroMobile} />
             <source media="(max-width: 1200px)" srcSet={heroTablet} />
             <source media="(min-width: 1201px)" srcSet={heroDesktop} />
             <img src={heroMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
@@ -42,7 +42,7 @@ const Home = () => {
       <section>
         <div className="md:flex md:items-center md:h-[650px]">
           <picture className="md:w-[40%] xl:w-[60%]">
-            <source media="(max-width: 680px)" srcSet={storiesMobile} />
+            <source media="(max-width: 768px)" srcSet={storiesMobile} />
             <source media="(max-width: 1200px)" srcSet={storiesTablet} />
             <source media="(min-width: 1201px)" srcSet={storiesDesktop} />
             <img src={storiesMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
@@ -64,7 +64,7 @@ const Home = () => {
       <section>
         <div className="md:flex md:flex-row-reverse md:items-center md:h-[650px]">
           <picture className="md:w-[40%] xl:w-[60%]">
-            <source media="(max-width: 680px)" srcSet={designedMobile} />
+            <source media="(max-width: 768px)" srcSet={designedMobile} />
             <source media="(max-width: 1200px)" srcSet={designedTablet} />
             <source media="(min-width: 1201px)" srcSet={designedDesktop} />
             <img src={designedMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />

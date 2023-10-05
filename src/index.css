@@ -83,14 +83,14 @@
       transform: translateY(0);
     }
   }
-}
-@screen md {
-  @keyframes slide {
-    0% {
-      transform: translateX(100px);
-    }
-    100% {
-      transform: translateX(0);
+  @screen md {
+    @keyframes slide {
+      0% {
+        transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
   }
   .deco-line {
