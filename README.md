@@ -17,8 +17,8 @@ Photosnap website
 
 ### Links
 
-- Git URL: 
-- Live Site URL: 
+- Git URL: https://github.com/thusmiley/photosnap.git
+- Live Site URL: https://photosnap-lac.vercel.app/
 
 ### Built with
 
