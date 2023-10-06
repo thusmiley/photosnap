@@ -3,7 +3,7 @@ import arrowWhite from "../assets/shared/desktop/arrow-white.svg";
 const StoryCard = ({id, date, name, author, link}) => {
   return (
     <div className={`${id} px-[33px] pb-10 text-white h-[375px] flex flex-col justify-end items-start relative group hover-effect md:h-[500px]`}>
-      <p className="empty:hidden text-[13px]">{date}</p>
+      <p className="empty:hidden text-[13px] mb-1">{date}</p>
       <h2 className="heading2 ">{name}</h2>
       <p className="text-[13px] mt-1 mb-4 border-b-[1px] border-white/25 pb-5 w-full">{author}</p>
       <a href={link} className="flex items-center justify-between w-full cta  hover:underline">

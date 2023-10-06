@@ -10,14 +10,9 @@ const Stories = () => {
     <div>
       {/* hero */}
       <section className="bg-black py-[72px] md:mt-[78px] md:py-0">
-        <div className="text-white md:flex md:flex-row-reverse md:items-center md:h-[650px]">
-          <picture className="md:w-[40%] xl:w-[60%]">
-            <source media="(max-width: 768px)" srcSet={heroMobile} />
-            <source media="(max-width: 1200px)" srcSet={heroTablet} />
-            <source media="(min-width: 1201px)" srcSet={heroDesktop} />
-            <img src={heroMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
-          </picture>
-          <div className="mt-[48px] px-[29px] relative md:w-[60%] md:px-[54px] md:my-[173px] xl:w-[40%] xl:px-[110px]">
+        <div className="text-white md:stories-hero-bg md:h-[650px]">
+          <img src={heroMobile} className="w-full h-[317px] object-cover object-top md:hidden" alt="hero image" />
+          <div className="pt-[48px] px-[29px] relative md:max-w-[60%] md:px-[39px] md:py-[122px] xl:w-[40%] xl:px-[110px]">
             <p className="text-[12px] tracking-[2px] mb-4 font-bold">LAST MONTH’S FEATURED STORY</p>
             <h1 className="heading1">HAZY FULL MOON OF APPALACHIA</h1>
             <p className="mt-4 text-[13px] text-white/75">
@@ -28,9 +23,19 @@ const Stories = () => {
               while the ridges are not high, the terrain is extremely rugged.
             </p>
             <a href="/pricing" className="inline-flex items-center cta hover:underline">
-              READ THE STORY<img src={arrowWhite} alt="arrow" className="ml-[18px]" />
+              READ THE STORY
+              <img src={arrowWhite} alt="arrow" className="ml-[18px]" />
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* stories */}
+      <section>
+        <div className="md:grid md:grid-cols-2 xl:grid-cols-4">
+          {fullStoriesData.map((card) => (
+            <StoryCard key={card.id} {...card} />
+          ))}
         </div>
       </section>
     </div>
