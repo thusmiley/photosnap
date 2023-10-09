@@ -26,7 +26,7 @@ const Home = () => {
             <img src={heroMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
           </picture>
           <div className="mt-[72px] px-[29px] relative md:w-[60%] md:px-[54px] md:my-[173px] xl:w-[40%] xl:px-[110px]">
-            <div className="deco-line md:w-[6px] md:top-0 md:h-full md:left-0" />
+            <div className="deco-line top-[-72px] md:w-[6px] md:top-0 md:h-full md:left-0" />
             <h1 className="heading1">Create and share your photo stories.</h1>
             <p className="paragraph text-white/60 mt-4 mb-[23px] md:mt-[21px] md:mb-12">
               Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
