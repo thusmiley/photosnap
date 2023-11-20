@@ -138,7 +138,7 @@ const Pricing = () => {
             {/* UNLIMITED STORY POSTING */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">UNLIMITED STORY POSTING</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 w-4 h-3 object-contain object-center md:mt-0" />
@@ -157,7 +157,7 @@ const Pricing = () => {
             {/* UNLIMITED PHOTO UPLOAD */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">UNLIMITED PHOTO UPLOAD</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 w-4 h-3 object-contain object-center md:mt-0" />
@@ -176,7 +176,7 @@ const Pricing = () => {
             {/* EMBEDDING CUSTOM CONTENT */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">EMBEDDING CUSTOM CONTENT</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 hidden" />
@@ -195,7 +195,7 @@ const Pricing = () => {
             {/* CUSTOMIZE METADATA */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">CUSTOMIZE METADATA</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 hidden" />
@@ -214,7 +214,7 @@ const Pricing = () => {
             {/* ADVANCED METRICS */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">ADVANCED METRICS</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 hidden" />
@@ -233,7 +233,7 @@ const Pricing = () => {
             {/* PHOTO DOWNLOADS*/}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">PHOTO DOWNLOADS</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 hidden" />
@@ -252,7 +252,7 @@ const Pricing = () => {
             {/* SEARCH ENGINE INDEXING */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6  md:w-[40%]">SEARCH ENGINE INDEXING</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 hidden" />
@@ -271,7 +271,7 @@ const Pricing = () => {
             {/* CUSTOM ANALYTICS */}
             <div className="py-6 border-b-[1px] border-lightGrey md:flex md:justify-between md:items-center">
               <h3 className="heading6 md:w-[40%]">CUSTOM ANALYTICS</h3>
-              <div className="flex space-x-[68px] mt-4 md:flex md:w-[60%] md:justify-between md:items-center md:mt-0 md:space-x-0">
+              <div className="flex justify-between space-x-[68px] mt-4 md:flex md:w-[60%] md:items-center md:mt-0 md:space-x-0">
                 <h4 className="planText md:flex md:items-center md:justify-center md:w-[140px]">
                   <span className="md:hidden">BASIC</span>
                   <img src={check} alt="check" className="mt-2 hidden" />
