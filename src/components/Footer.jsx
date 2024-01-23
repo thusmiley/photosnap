@@ -2,19 +2,32 @@ import logoWhite from "../assets/shared/desktop/logo-white.svg";
 import arrowWhite from "../assets/shared/desktop/arrow-white.svg";
 
 const Footer = () => {
+  const pathname = window.location.pathname;
+
   return (
     <footer className="bg-black text-white py-[56px] md:py-[64px] md:px-10 xl:px-[165px]">
       <div className="md:flex md:justify-between md:mx-auto md:items-stretch xl:relative">
         {/* div contains logo, social icons, menu  */}
         <div>
           <div className="mx-auto md:ml-0">
-            <img src={logoWhite} alt="logo" className="h-4 w-full object-contain mb-8 md:mb-0 md:object-left" />
+            <img
+              src={logoWhite}
+              alt="logo"
+              className="h-4 w-full object-contain mb-8 md:mb-0 md:object-left"
+            />
 
             {/* div contains social icons and menu */}
             <div className="md:flex md:flex-col-reverse">
               {/* div contains social icons */}
               <div className="socials flex  items-center justify-center space-x-[13px] md:justify-start xl:mt-[89px]">
-                <svg className="facebook" width="20" height="20" viewBox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="facebook"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <defs>
                     <linearGradient id="fb" x1="100%" x2="0%" y1="0%" y2="100%">
                       <stop offset="0%" stopColor="#fff" />
@@ -26,7 +39,14 @@ const Footer = () => {
                     fill="url(#fb)"
                   />
                 </svg>
-                <svg className="youtube" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="youtube"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <defs>
                     <linearGradient id="yt" x1="0%" x2="100%" y1="100%" y2="0%">
                       <stop offset="0%" stopColor="#fff" />
@@ -40,9 +60,22 @@ const Footer = () => {
                     fill="url(#yt)"
                   />
                 </svg>
-                <svg className="twitter" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="twitter"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <defs>
-                    <linearGradient id="tw" x1="100%" x2="0%" y1="16.979%" y2="83.021%">
+                    <linearGradient
+                      id="tw"
+                      x1="100%"
+                      x2="0%"
+                      y1="16.979%"
+                      y2="83.021%"
+                    >
                       <stop offset="0%" stopColor="#fff" />
                       <stop offset="100%" stopColor="#fff" />
                     </linearGradient>
@@ -52,9 +85,22 @@ const Footer = () => {
                     fill="url(#tw)"
                   />
                 </svg>
-                <svg className="pinterest" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="pinterest"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <defs>
-                    <linearGradient id="pin" x1="100%" x2="0%" y1="0%" y2="100%">
+                    <linearGradient
+                      id="pin"
+                      x1="100%"
+                      x2="0%"
+                      y1="0%"
+                      y2="100%"
+                    >
                       <stop offset="0%" stopColor="#fff" />
                       <stop offset="100%" stopColor="#fff" />
                     </linearGradient>
@@ -64,7 +110,14 @@ const Footer = () => {
                     fill="url(#pin)"
                   />
                 </svg>
-                <svg className="instagram" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="instagram"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <defs>
                     <linearGradient id="ins" x1="0%" x2="50%" y1="100%" y2="0%">
                       <stop offset="0%" stopColor="#fff" />
@@ -82,10 +135,35 @@ const Footer = () => {
               </div>
 
               <ul className="mt-[49px] mb-[119px] text-center space-y-[19px] text-[12px] tracking-[2px] md:flex md:justify-start md:items-center md:space-y-0 md:space-x-[26px] md:mt-8 md:mb-[72px] xl:absolute xl:flex-col xl:top-0 xl:left-[30%] xl:space-x-0 xl:items-start xl:mt-0 xl:mb-0 xl:space-y-[19px] 2xl:left-[25%]">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/stories">STORIES</a></li>
-                <li><a href="/features">FEATURES</a></li>
-                <li><a href="/pricing">PRICING</a></li>
+                <li>
+                  <a href="/" className={pathname == "/" ? "opacity-30" : ""}>
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/stories"
+                    className={pathname == "/stories" ? "opacity-30" : ""}
+                  >
+                    STORIES
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/features"
+                    className={pathname == "/features" ? "opacity-30" : ""}
+                  >
+                    FEATURES
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pricing"
+                    className={pathname == "/pricing" ? "opacity-30" : ""}
+                  >
+                    PRICING
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -93,10 +171,16 @@ const Footer = () => {
 
         {/* div contains cta, copyrights */}
         <div className="">
-          <a href="/pricing" className="flex items-center cta justify-center hover:underline md:justify-end">
-            GET AN INVITE <img src={arrowWhite} alt="arrow" className="ml-[18px]" />
+          <a
+            href="/pricing"
+            className="flex items-center cta justify-center hover:underline md:justify-end"
+          >
+            GET AN INVITE{" "}
+            <img src={arrowWhite} alt="arrow" className="ml-[18px]" />
           </a>
-          <p className="text-[15px] text-white/50 text-center mt-[34px] md:mt-[120px] xl:mt-[87px]">Copyright 2019. All Rights Reserved</p>
+          <p className="text-[15px] text-white/50 text-center mt-[34px] md:mt-[120px] xl:mt-[87px]">
+            Copyright 2019. All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>

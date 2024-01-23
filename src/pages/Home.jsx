@@ -23,7 +23,7 @@ const Home = () => {
             <source media="(max-width: 768px)" srcSet={heroMobile} />
             <source media="(max-width: 1200px)" srcSet={heroTablet} />
             <source media="(min-width: 1201px)" srcSet={heroDesktop} />
-            <img src={heroMobile} className="w-full h-[full] object-cover object-top md:h-[650px]" alt="hero image" />
+            <img src={heroMobile} className="w-full h-full object-cover object-top md:h-[650px]" alt="hero image" />
           </picture>
           <div className="mt-[72px] px-[29px] relative md:w-[60%] md:px-[54px] md:my-[173px] xl:w-[40%] xl:px-[110px]">
             <div className="deco-line top-[-72px] md:w-[6px] md:top-0 md:h-full md:left-0" />
